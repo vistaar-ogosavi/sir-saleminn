@@ -1,0 +1,102 @@
+/*
+
+Theme Name: Salem Inn
+Theme URI: http://theme.co/pro/
+Author: Themeco
+Author URI: http://theme.co/
+Description: Make all of your modifications to Pro in this child theme.
+Version: 1.0.0
+Template: pro
+
+*/
+
+.imgbottom img{vertical-align:bottom;}
+.imgtop img{vertical-align:top;}
+
+
+.x-face-title{
+font-family: "Vollkorn",display;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: .05em;
+text-align: center;
+text-transform: none;
+/*margin-top:25px;*/
+vertical-align:middle;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: "Vollkorn", display !important;
+}
+
+.x-face-outer {
+	height: 23rem !important;
+}
+
+@media (max-width: 767px) {
+	.x-card-outer {
+		margin-bottom: 180px !important;
+	}
+}
+
+.white {color:#fff;}
+.grayish {color: #7f908b;}
+.brand-green{color; #002d3f !important;}
+
+#ui-datepicker-div {
+z-index: 10000000 !important;
+} 
+
+.prebanner img,
+.prebanner video {
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+/*1 link to rule them all*/
+.prebanner a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+@media (min-width: 980px) {
+	.prebanner  {
+		background: rgba(0,0,0,.5);
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.prebanner + .x-section {
+		padding-top: 150px !important;
+	}
+}
+
+/* Temporary banner styles to announce COVID closing */
+/* Hiding bg image and CTA button
+.home .x-section:first-child .x-bg,
+.home .x-section:nth-child(2) .x-bg {
+	background: rgb(0,45,63);
+}
+
+.home .x-section:first-child .x-bg,
+.home .x-section:nth-child(2) .x-bg {
+	visibility: hidden;
+}
+ */
+.home a#homepage-hero-booking-button {
+	display: none;
+}
+
+.home #cs-content > .x-section:first-child {
+	min-height: 90vh;
+}

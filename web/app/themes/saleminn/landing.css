@@ -1,0 +1,279 @@
+/*
+*	Author: Jeffrey Pia
+*	Description: Custom styles for landing page template
+*	Version: 1.1.0
+*/
+@font-face {
+    font-family: "Bodoni";
+    src: url("assets/fonts/Bodoni 72 Smallcaps Book.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Bodoni2";
+    src: url("assets/fonts/Bodoni Ornaments") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.entry-content {
+	margin-top: 0;
+}
+
+.wrap {
+	padding: 40px 0;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	position: relative;
+}
+
+.article {
+	width: 100%;
+	max-width: 650px;
+}
+
+.sidebar {
+	width: 100%;
+}
+
+.landing-bg {
+	display: none;
+	position: absolute;
+	right: -70px;
+	bottom: -60px;
+	z-index: 1
+}
+
+.banner {
+	padding: 40px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 540px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner:before {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #2b574e;
+	width: 100%;
+	height: 100%;
+	opacity: .25;
+	z-index: 1;
+}
+
+.banner video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+/*	top: 50%;
+	transform: translateY(-50%);
+*/}
+
+.banner_text {
+	margin: 0 auto;
+	max-width: 90%;
+	position: relative;
+	z-index: 1;
+}
+
+.banner_title {
+	margin-top: 0;
+	/*text-shadow: 3px 3px 5px hsla(0,0%,0%,0.61);*/
+	font: normal 1em/60px "Bodoni2", serif !important;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.banner_title span {
+	vertical-align: top;
+}
+
+/*The*/
+.banner_title span:nth-child(1) {
+	font-size: 45px;
+}
+
+/*Haunting*/
+.banner_title span:nth-child(3) {
+	font-size: 50px;
+}
+
+/*Is*/
+.banner_title span:nth-child(5) {
+	display: inline-block;
+	margin-top: -5px;
+	font-size: 32px;
+}
+
+/*Alive*/
+.banner_title span:nth-child(6) {
+	font-size: 45px;
+}
+
+@media only screen and (min-width : 600px) {
+	.banner_title {
+		line-height: 80px !important;
+	}
+
+	.banner_title span:nth-child(1) {
+		font-size: 60px;
+	}
+
+	.banner_title span:nth-child(3) {
+		font-size: 80px;
+	}
+
+	.banner_title span:nth-child(5) {
+		margin-top: -5px;
+		font-size: 50px;
+	}
+
+	.banner_title span:nth-child(6) {
+		font-size: 90px;
+	}
+}
+
+.banner_cta {
+	max-width: 90%;
+	position: relative;
+	z-index: 1;
+}
+
+.banner_cta a {
+	border: 0;
+	padding: 10px 1.125em;
+	font: normal 24px/1.25 "Bodoni2", serif;
+	text-transform: uppercase;
+	background: #003c55;
+	transition-property: color, background-color;
+}
+
+.banner_cta a:hover {
+	color: #002d3f;
+	background-color: #fff;
+}
+
+.divider {
+	margin: 40px auto 20px;
+	border: 0;
+	width: 132px;
+	height: 22px;
+	background: url('assets/images/divider.png') no-repeat center center;
+}
+
+.banner_description {
+	font: normal 24px/1.25 "Bodoni2", serif;
+}
+
+.sidebar {
+	margin-top: 20px;
+}
+
+.sidebar img {
+	border: 13px solid #dededb;
+}
+
+.landing-footer {
+	background: url('assets/images/landing-footer-bg.jpg') no-repeat center center #d2d3d4;
+	background-size: cover;
+}
+
+.button.landing-footer_cta {
+	padding: 7px 30px;
+	border: 0;
+	font: normal 24px/1.5 "Bodoni2", serif;
+	text-transform: uppercase;
+	text-shadow: none;
+	background: #95842b;
+	transition-property: color, background-color;
+}
+
+.x-colophon {
+	display: none;
+}
+
+.entry-content p {
+	font: normal 22px/1.5 "Bodoni2", serif;
+	color: #616161;
+}
+
+.entry-content .cta {
+	font: 24px/1.25 'Myriad Pro', Arial, sans-serif;
+}
+
+.entry-content .cta strong {
+	font-weight: normal;
+	color: #978832;
+	text-transform: uppercase;
+}
+
+.entry-content .sub {
+	font: normal 16px/1 "Myriad Pro", Arial, sans-serif !important;
+}
+
+.entry-content p:first-child {
+	margin-top: -36px;
+}
+
+.entry-content p:first-child:first-letter {
+	font-size: 72px;
+	line-height: .5;
+	color: #978832;
+}
+
+.entry-content h2 {
+	margin: 30px 0 25px;
+	font: normal 24px/1.125 "Bodoni2", serif;
+	color: #978832;
+}
+
+@media only screen and (min-width : 600px) {
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+		padding: 80px 0;
+	}
+
+	.article {
+		padding-right: 50px;
+	}
+
+	.entry-content h2 {
+		font-size: 32px;
+	}
+
+	.entry-content .sub {
+		position: absolute;
+		bottom: 10px;
+	}
+
+	
+	.sidebar {
+		margin-top: 0;
+		width: 100%;
+		max-width: 300px;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+	.landing-bg {
+		display: block;
+	}
+
+	.entry-content h2 {
+		font-size: 36px;
+	}
+}
